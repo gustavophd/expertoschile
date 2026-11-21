@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #FDF8F0;
+  --cream-deep: #F6EBDD;
+  --paper: #FFFDF8;
+  --ink: #1F2A2E;
+  --muted: #6B635B;
+  --line: #E7DACB;
+  --terracotta: #C0392B;
+  --terracotta-soft: #F7E5E1;
+  --navy: #1F4E79;
+  --navy-soft: #E7EEF5;
+  --gold: #B68A3D;
+  --surface: #FDF8F0;
+  --card: #FFFDF8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cream: #171512;
+    --cream-deep: #221E19;
+    --paper: #211D18;
+    --ink: #F4EDE2;
+    --muted: #C3B9AC;
+    --line: #3A332C;
+    --terracotta: #E46858;
+    --terracotta-soft: #3A2420;
+    --navy: #8FB2D6;
+    --navy-soft: #253343;
+    --gold: #D3AC61;
+    --surface: #171512;
+    --card: #211D18;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.font-serif-display { font-family: "EB Garamond", Georgia, "Times New Roman", serif; }
+::selection { background: var(--terracotta); color: white; }
